@@ -23,7 +23,7 @@ void exibirMenu()
     Console.WriteLine("\n1. Adicionar jogo");
     Console.WriteLine("2. Listar jogos");
     Console.WriteLine("3. Avaliar jogo");
-    Console.WriteLine("4. Exibir média de avaliação do Jogo");
+    Console.WriteLine("4. Exibir média de avaliação do jogo");
     Console.WriteLine("5. Sair");
 
     Console.Write("\nOpção escolhida: ");

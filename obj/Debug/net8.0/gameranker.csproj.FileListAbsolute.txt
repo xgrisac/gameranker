@@ -12,3 +12,4 @@ C:\Users\Windows 11\source\repos\gameranker\gameranker\obj\Debug\net8.0\refint\g
 C:\Users\Windows 11\source\repos\gameranker\gameranker\obj\Debug\net8.0\gameranker.pdb
 C:\Users\Windows 11\source\repos\gameranker\gameranker\obj\Debug\net8.0\gameranker.genruntimeconfig.cache
 C:\Users\Windows 11\source\repos\gameranker\gameranker\obj\Debug\net8.0\ref\gameranker.dll
+C:\Users\Windows 11\source\repos\gameranker\gameranker\obj\Debug\net8.0\gameranker.sourcelink.json

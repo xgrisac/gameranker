@@ -1,7 +1,7 @@
 ﻿// Game Ranker - A game ranking application
 string mensagemDeBoasVindas = "Bem-vindo ao Game Ranker! Aqui você pode classificar seus jogos favoritos.";
 
-void exibirMensagemDeBoasVindas()
+void ExibirLogo()
 {
     Console.WriteLine(@"
 ░██████╗░░█████╗░███╗░░░███╗███████╗  ██████╗░░█████╗░███╗░░██╗██╗░░██╗███████╗██████╗░
@@ -11,15 +11,13 @@ void exibirMensagemDeBoasVindas()
 ╚██████╔╝██║░░██║██║░╚═╝░██║███████╗  ██║░░██║██║░░██║██║░╚███║██║░╚██╗███████╗██║░░██║
 ░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝  ╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
 ");
-    Console.WriteLine("\n*******************");
     Console.WriteLine(mensagemDeBoasVindas);
-    Console.WriteLine("*******************");
 }
 
-void exibirMenu()
+void ExibirMenu()
 {
+    ExibirLogo(); // Chama a função de boas-vindas
     Console.WriteLine("\nEscolha uma opção:");
-   
     Console.WriteLine("\n1. Adicionar jogo");
     Console.WriteLine("2. Listar jogos");
     Console.WriteLine("3. Avaliar jogo");
@@ -27,10 +25,43 @@ void exibirMenu()
     Console.WriteLine("5. Sair");
 
     Console.Write("\nOpção escolhida: ");
-    Console.ReadLine(); // Lê a opção do usuário
-
+    string opcaoEscolhida = Console.ReadLine()!; // Lê a opção do usuário
+    int opçãoEscolhidaNumerica = int.Parse(opcaoEscolhida); // Converte a opção para inteiro    
+  
+    switch (opçãoEscolhidaNumerica) // Condiçao que avalia como if e else if
+    {
+        case 1:
+            RegistrarJogo();
+            break;
+        case 2:
+            Console.WriteLine("Você escolheu a opção " + opçãoEscolhidaNumerica);
+            break;
+        case 3:
+            Console.WriteLine("Você escolheu a opção " + opçãoEscolhidaNumerica);
+            break;
+        case 4:
+            Console.WriteLine("Você escolheu a opção " + opçãoEscolhidaNumerica);
+            break;
+        case 5:
+            Console.WriteLine("Clica em qualquer tecla para sair! :)");
+            break;
+        default: 
+            Console.WriteLine("Opção inválida. Tente novamente.");
+            break;
+    }
 }
 
-exibirMensagemDeBoasVindas();
-Thread.Sleep(4000); // Pausa de 4 segundos para o usuário ler a mensagem
-exibirMenu();
+void RegistrarJogo()
+{
+    Console.Clear(); // Limpa o console
+    Console.WriteLine("Registro de Jogo\n");
+    Console.Write("Digite o nome do jogo: ");
+    string nomeDoJogo = Console.ReadLine()!;
+    Console.WriteLine($"O jogo {nomeDoJogo} foi registrado com sucesso!"); 
+    Thread.Sleep(4000); // Pausa por 4 segundos
+    Console.Clear();
+    ExibirMenu(); // Chama a função de boas-vindas novamente
+}
+
+
+ExibirMenu();

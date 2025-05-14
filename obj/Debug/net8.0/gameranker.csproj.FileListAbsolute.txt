@@ -1,0 +1,14 @@
+C:\Users\Windows 11\source\repos\gameranker\gameranker\bin\Debug\net8.0\gameranker.exe
+C:\Users\Windows 11\source\repos\gameranker\gameranker\bin\Debug\net8.0\gameranker.deps.json
+C:\Users\Windows 11\source\repos\gameranker\gameranker\bin\Debug\net8.0\gameranker.runtimeconfig.json
+C:\Users\Windows 11\source\repos\gameranker\gameranker\bin\Debug\net8.0\gameranker.dll
+C:\Users\Windows 11\source\repos\gameranker\gameranker\bin\Debug\net8.0\gameranker.pdb
+C:\Users\Windows 11\source\repos\gameranker\gameranker\obj\Debug\net8.0\gameranker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows 11\source\repos\gameranker\gameranker\obj\Debug\net8.0\gameranker.AssemblyInfoInputs.cache
+C:\Users\Windows 11\source\repos\gameranker\gameranker\obj\Debug\net8.0\gameranker.AssemblyInfo.cs
+C:\Users\Windows 11\source\repos\gameranker\gameranker\obj\Debug\net8.0\gameranker.csproj.CoreCompileInputs.cache
+C:\Users\Windows 11\source\repos\gameranker\gameranker\obj\Debug\net8.0\gameranker.dll
+C:\Users\Windows 11\source\repos\gameranker\gameranker\obj\Debug\net8.0\refint\gameranker.dll
+C:\Users\Windows 11\source\repos\gameranker\gameranker\obj\Debug\net8.0\gameranker.pdb
+C:\Users\Windows 11\source\repos\gameranker\gameranker\obj\Debug\net8.0\gameranker.genruntimeconfig.cache
+C:\Users\Windows 11\source\repos\gameranker\gameranker\obj\Debug\net8.0\ref\gameranker.dll

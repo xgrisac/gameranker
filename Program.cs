@@ -1,7 +1,8 @@
 ﻿// Game Ranker - A game ranking application
 string mensagemDeBoasVindas = "Bem-vindo ao Game Ranker! Aqui você pode classificar seus jogos favoritos.";
+List<string> listaDeJogos = new List<string>(); // Lista para armazenar os jogos
 
-void ExibirLogo()
+void ExibirLogo()   
 {
     Console.WriteLine(@"
 ░██████╗░░█████╗░███╗░░░███╗███████╗  ██████╗░░█████╗░███╗░░██╗██╗░░██╗███████╗██████╗░
@@ -11,7 +12,7 @@ void ExibirLogo()
 ╚██████╔╝██║░░██║██║░╚═╝░██║███████╗  ██║░░██║██║░░██║██║░╚███║██║░╚██╗███████╗██║░░██║
 ░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝  ╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
 ");
-    Console.WriteLine(mensagemDeBoasVindas);
+    ExibirTituloDaOpcao(mensagemDeBoasVindas);
 }
 
 void ExibirMenu()
@@ -34,7 +35,7 @@ void ExibirMenu()
             RegistrarJogo();
             break;
         case 2:
-            Console.WriteLine("Você escolheu a opção " + opçãoEscolhidaNumerica);
+            ExibirJogos();
             break;
         case 3:
             Console.WriteLine("Você escolheu a opção " + opçãoEscolhidaNumerica);
@@ -54,14 +55,57 @@ void ExibirMenu()
 void RegistrarJogo()
 {
     Console.Clear(); // Limpa o console
-    Console.WriteLine("Registro de Jogo\n");
-    Console.Write("Digite o nome do jogo: ");
+    ExibirTituloDaOpcao("REGISTRO DE JOGOS"); // Chama a função que exibe o título da opção
+    Console.Write("\nDigite o nome do jogo: ");
     string nomeDoJogo = Console.ReadLine()!;
-    Console.WriteLine($"O jogo {nomeDoJogo} foi registrado com sucesso!"); 
-    Thread.Sleep(4000); // Pausa por 4 segundos
-    Console.Clear();
-    ExibirMenu(); // Chama a função de boas-vindas novamente
+
+    if (string.IsNullOrWhiteSpace(nomeDoJogo)) // Impede que o nome seja um espaço vazio
+    {
+        Console.WriteLine("Nome do jogo não pode ser nulo. Tente novamente.");
+        Thread.Sleep(2000); // Pausa por 2 segundos
+        RegistrarJogo();
+    } else
+    {
+        listaDeJogos.Add(nomeDoJogo); // Adiciona o jogo à lista
+        Console.WriteLine($"\nO jogo {nomeDoJogo} foi registrado com sucesso!");
+        Thread.Sleep(4000); // Pausa por 4 segundos
+        Console.Clear();
+        ExibirMenu(); // Chama o menu novamente
+    }
+
 }
 
+void ExibirJogos()
+{
+    Console.Clear();
+    ExibirTituloDaOpcao("SUA LISTA DE JOGOS");
+
+    if (listaDeJogos.Count == 0) // Verifica se a lista está vazia
+    {
+        Console.WriteLine("Nenhum jogo registrado ainda");
+    } else
+     {
+        foreach (string nomeDoJogo in listaDeJogos) // Pra cada jogo na minha lista de jogos
+        {
+            Console.WriteLine($"{nomeDoJogo}"); // Exibe o nome do jogo
+        }
+
+     }
+
+    Console.WriteLine("\nPressione 'Enter' para voltar ao menu príncipal");
+    Console.ReadKey(); // Aguarda o usuário pressionar qualquer tecla
+    Console.Clear();
+    ExibirMenu();
+}
+
+// Esta função foi criada com objetivo de criar asteriscos em volta do titulo acompanhamento a quantidade de letras com o recurso Lenght
+void ExibirTituloDaOpcao(string titulo)
+{
+    int QntLetras = titulo.Length;
+    string asteriscos = string.Empty.PadLeft(QntLetras, '*'); // Esta função exige 2 parametros, a qnt de repetições e o caracter
+    Console.WriteLine(asteriscos);
+    Console.WriteLine(titulo);
+    Console.WriteLine(asteriscos + '\n');
+}
 
 ExibirMenu();

@@ -51,7 +51,9 @@ dotnet run
 5. Sair
 
 - Opção escolhida: 1
+  
 Digite o nome do jogo: Elden Ring
+
 O jogo Elden Ring foi registrado com sucesso!
 
 # Possíveis Extensões Futuras
@@ -68,11 +70,9 @@ O jogo Elden Ring foi registrado com sucesso!
 
 Sinta-se à vontade para contribuir! Crie um fork, faça melhorias e envie um pull request. É um projeto iniciante com muito potencial para evoluir!
 
-# Licença
+# Créditos
 
-Este projeto está licenciado sob a MIT License.
-
-Desenvolvido por Isac Ribeiro 👨‍💻
+Este projeto foi desenvolvido por Isac Ribeiro como forma de aprendizado e prática pessoal, com base nos conteúdos estudados no curso "Aprenda programação em C#" da Alura.  👨‍💻
 
 
 ![gameranker](https://github.com/user-attachments/assets/7c66b02c-6139-47c5-8eac-ff3c9f122e15)

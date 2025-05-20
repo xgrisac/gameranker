@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gameranker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ae4d99afd5d6f5c879574d398b1f2dc5e284fd5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64a4b6d605270e308ec329334d75090fc3305497")]
 [assembly: System.Reflection.AssemblyProductAttribute("gameranker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gameranker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

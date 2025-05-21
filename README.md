@@ -22,9 +22,9 @@ C# (CSharp): Linguagem principal do projeto.
 
 Dicionários C# (Dictionary): Utilizados para armazenar os jogos e suas avaliações.
 
-Como Rodar o Projeto Localmente
+# Como Rodar o Projeto Localmente
 
-# Requisitos:
+- Requisitos:
 
 .NET SDK instalado: https://dotnet.microsoft.com/download
 
